@@ -1,0 +1,33 @@
+.container-fluid,
+.container {
+  width: 100%;
+  padding-right: var(--spacing-container);
+  padding-left: var(--spacing-container);
+
+  @include media-breakpoint-up(sm) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.container {
+  @include media-breakpoint-down(sm) {
+    max-width: $breakpoints-sm;
+  }
+
+  @include media-breakpoint-between(sm, md) {
+    max-width: $breakpoints-md;
+  }
+
+  @include media-breakpoint-between(md, lg) {
+    max-width: $breakpoints-lg;
+  }
+
+  @include media-breakpoint-between(lg, xl) {
+    max-width: $breakpoints-xl;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: $breakpoints-xxl;
+  }
+}

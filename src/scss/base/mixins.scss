@@ -1,0 +1,60 @@
+$breakpoints-xs: 320px;
+$breakpoints-sm: 576px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 1024px;
+$breakpoints-xl: 1440px;
+$breakpoints-xxl: 1620px;
+$breakpoints-xxxl: 1920px;
+
+$breakpoints: (
+  xs: $breakpoints-xs,
+  sm: $breakpoints-sm,
+  md: $breakpoints-md,
+  lg: $breakpoints-lg,
+  xl: $breakpoints-xl,
+  xxl: $breakpoints-xxl,
+  xxxl: $breakpoints-xxxl,
+);
+
+@mixin media-breakpoint-up($name, $grid-breakpoints: $breakpoints) {
+  @if map-has-key($grid-breakpoints, $name) {
+    $min: map-get($grid-breakpoints, $name);
+
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$name}.';
+  }
+}
+
+@mixin media-breakpoint-down($name, $grid-breakpoints: $breakpoints) {
+  @if map-has-key($grid-breakpoints, $name) {
+    $max: map-get($grid-breakpoints, $name);
+
+    @media (max-width: ($max - 0.98)) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$name}.';
+  }
+}
+
+@mixin media-breakpoint-between($lower, $upper, $grid-breakpoints: $breakpoints) {
+  @if map-has-key($grid-breakpoints, $lower) and map-has-key($grid-breakpoints, $upper) {
+    $min: map-get($grid-breakpoints, $lower);
+    $max: map-get($grid-breakpoints, $upper);
+
+    @media (min-width: $min) and (max-width: ($max - 0.98)) {
+      @content;
+    }
+  } @else {
+    @if (map-has-key($grid-breakpoints, $lower) == false) {
+      @warn 'Your lower breakpoint was invalid: #{$lower}.';
+    }
+
+    @if (map-has-key($grid-breakpoints, $upper) == false) {
+      @warn 'Your upper breakpoint was invalid: #{$upper}.';
+    }
+  }
+}

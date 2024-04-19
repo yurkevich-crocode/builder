@@ -1,0 +1,24 @@
+:root {
+  --typography-htmlFontSize: 16px;
+
+  --color-1: #31947b;
+  --color-2: #202020;
+  --color-3: #f8f8f8;
+  --color-4: #ff035a;
+
+  --typography-fontFamily: "Neue Machina", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  @include media-breakpoint-up(xl) {
+    --spacing-container: 32px;
+  }
+
+  @include media-breakpoint-between(lg, xl) {
+    --spacing-container: 24px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    --spacing-container: 20px;
+  }
+}

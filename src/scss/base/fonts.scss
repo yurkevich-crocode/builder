@@ -1,0 +1,86 @@
+// fonts
+$font-base-urlp: "../../fonts/NeueMachina/";
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("#{$font-base-urlp}NeueMachina-Ultralight.eot");
+  src: local("Neue Machina Ultralight"), local("NeueMachina-Ultralight"),
+    url("#{$font-base-urlp}NeueMachina-Ultralight.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-base-urlp}NeueMachina-Ultralight.woff2") format("woff2"),
+    url("#{$font-base-urlp}NeueMachina-Ultralight.woff") format("woff"),
+    url("#{$font-base-urlp}NeueMachina-Ultralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("#{$font-base-urlp}NeueMachina-Light.eot");
+  src: local("Neue Machina Light"), local("NeueMachina-Light"),
+    url("#{$font-base-urlp}NeueMachina-Light.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-base-urlp}NeueMachina-Light.woff2") format("woff2"),
+    url("#{$font-base-urlp}NeueMachina-Light.woff") format("woff"),
+    url("#{$font-base-urlp}NeueMachina-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("#{$font-base-urlp}NeueMachina-Black.eot");
+  src: local("Neue Machina Black"), local("NeueMachina-Black"),
+    url("#{$font-base-urlp}NeueMachina-Black.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-base-urlp}NeueMachina-Black.woff2") format("woff2"),
+    url("#{$font-base-urlp}NeueMachina-Black.woff") format("woff"),
+    url("#{$font-base-urlp}NeueMachina-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("#{$font-base-urlp}NeueMachina-Regular.eot");
+  src: local("Neue Machina Regular"), local("NeueMachina-Regular"),
+    url("#{$font-base-urlp}NeueMachina-Regular.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-base-urlp}NeueMachina-Regular.woff2") format("woff2"),
+    url("#{$font-base-urlp}NeueMachina-Regular.woff") format("woff"),
+    url("#{$font-base-urlp}NeueMachina-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("#{$font-base-urlp}NeueMachina-Bold.eot");
+  src: local("Neue Machina Bold"), local("NeueMachina-Bold"),
+    url("#{$font-base-urlp}NeueMachina-Bold.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-base-urlp}NeueMachina-Bold.woff2") format("woff2"),
+    url("#{$font-base-urlp}NeueMachina-Bold.woff") format("woff"),
+    url("#{$font-base-urlp}NeueMachina-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("#{$font-base-urlp}NeueMachina-Medium.eot");
+  src: local("Neue Machina Medium"), local("NeueMachina-Medium"),
+    url("#{$font-base-urlp}NeueMachina-Medium.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-base-urlp}NeueMachina-Medium.woff2") format("woff2"),
+    url("#{$font-base-urlp}NeueMachina-Medium.woff") format("woff"),
+    url("#{$font-base-urlp}NeueMachina-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("#{$font-base-urlp}NeueMachina-Ultrabold.eot");
+  src: local("Neue Machina Ultrabold"), local("NeueMachina-Ultrabold"),
+    url("#{$font-base-urlp}NeueMachina-Ultrabold.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-base-urlp}NeueMachina-Ultrabold.woff2") format("woff2"),
+    url("#{$font-base-urlp}NeueMachina-Ultrabold.woff") format("woff"),
+    url("#{$font-base-urlp}NeueMachina-Ultrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
